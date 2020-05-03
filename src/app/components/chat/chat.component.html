@@ -1,0 +1,33 @@
+<div class="card h-100">
+  <div class="card-header">
+    <b>Historial de mensajes (Máx 5)</b>
+  </div>
+  <div id="chat-body" class="card-body overflow-auto" style="height: 400px;">
+    <div class="mensaje" [ngClass]="{'mensaje_propio': _cs.usuario.uid == chat.uid, 'mensaje_otro': _cs.usuario.uid !== chat.uid}" *ngFor="let chat of _cs.chats">
+      <span class="badge" [ngClass]="{'badge-warning': _cs.usuario.uid == chat.uid, 'badge-info': _cs.usuario.uid !== chat.uid}">
+        {{ chat.nombre }}
+      </span>
+      <p class="card-text">
+        {{ chat.mensaje }}
+      </p>
+    </div>
+  </div>
+  <div class="card-footer text-muted">
+    <div class="input-group">
+      <input type="text"
+        class="form-control"
+        placeholder="Escribe un mensaje"
+        name="input-msg"
+        [(ngModel)]="mensaje"
+        (keyup.enter)="sendMessage()">
+      <div class="input-group-append">
+        <button class="btn btn-warning"
+          type="button"
+          id="btn-send"
+          (click)="sendMessage()">
+          <b>Enviar</b>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

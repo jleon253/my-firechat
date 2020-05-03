@@ -1,0 +1,27 @@
+:root{
+  --bkg-propio: rgb(151, 255, 147);
+  --bkg-otro: rgb(207, 207, 207);
+}
+
+.mensaje{
+  width: 95%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.mensaje_propio{
+  text-align: right;
+  background-color: #fff4d1;
+  margin-left: auto;
+}
+
+.mensaje_otro{
+  text-align: left;
+  background-color: #d9faff;
+}
+
+input::placeholder{
+  font-style: italic;
+  color: #b9b9b9;
+}
