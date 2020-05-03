@@ -1,4 +1,17 @@
-# FireChat
+# My FireChat
+
+This project is a small chat app P2P, that allow send and save messagges through Firebase database (Cloud Firestore).
+This app used Google and Twitter API for auth permissions.
+
+> For sign in, you must have a account in Google or Twitter.
+
+**DEMO:** https://jleon253.github.io/my-firechat/
+
+### Dev tools used:
+
+> - HTML 5, CSS 3, Bootstrap 4
+> - ES6, Angular 8, AngularFire 2, Google and Twitter API
+> - Firebase (Cloud Firestore)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
 
